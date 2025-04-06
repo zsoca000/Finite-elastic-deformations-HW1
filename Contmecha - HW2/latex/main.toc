@@ -1,0 +1,10 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Task: Plotting experimental data}{4}{section.1}%
+\contentsline {section}{\numberline {2}Task: Fitting model only to the unaxial data}{5}{section.2}%
+\contentsline {section}{\numberline {3}Task: Equibiaxial and planar quality functions}{5}{section.3}%
+\contentsline {section}{\numberline {4}Task: Plotting solutions}{6}{section.4}%
+\contentsline {section}{\numberline {5}Task: Simultaneous fitting to all measurements}{6}{section.5}%
+\contentsline {section}{\numberline {6}Task: Plotting solutions}{7}{section.6}%
+\contentsline {section}{\numberline {7}Task: Determination of k}{8}{section.7}%
+\contentsline {section}{\numberline {8}Task: Principal streches}{8}{section.8}%
+\contentsline {section}{\numberline {9}Task: Cauchy stress tensor and Mises Equivalent stress}{9}{section.9}%
