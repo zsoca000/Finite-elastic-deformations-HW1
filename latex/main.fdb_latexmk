@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1743942087.2437 "c:/Users/rdsup/Desktop/mecha2/latex/main.tex" "main.pdf" "main" 1743942089.61846 0
+["pdflatex"] 1744224275.60215 "c:/Users/rdsup/Desktop/mecha2/latex/main.tex" "main.pdf" "main" 1744224282.37211 0
   "C:/Users/rdsup/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1743800173 319829 7a5a640d46b5de74b1e9e3f84fcbfba8 ""
   "C:/Users/rdsup/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1740413720 12015783 f0c2336a7da70ce41d7e5b252576240c ""
   "C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1001775420 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -264,16 +264,16 @@
   "C:/Users/rdsup/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/rdsup/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "HF.pdf" 1743798065 501930 facb7924ee82e70c8125bc651666c79b ""
-  "c:/Users/rdsup/Desktop/mecha2/latex/main.tex" 1743942086 11040 eb709ff95fd0d1adbafe83c35ed3629d ""
-  "figures/best_prony.png" 1743937417 10020 9501f4a6549bf1d9c39c6414edd6435e ""
-  "figures/data.png" 1743937477 14977 9df2e5978baa6651352437588890369e ""
-  "figures/deviatoric_response.png" 1743940542 29512 a484cf77c13bf0b720fb622d52220957 ""
+  "c:/Users/rdsup/Desktop/mecha2/latex/main.tex" 1744224169 10611 f7135b4cbf878bc49005e9dacd9b773f ""
+  "figures/best_prony.png" 1744223913 10357 58b3b418830bf8d53aa1403643068208 ""
+  "figures/data.png" 1744221872 16398 782d7c0e585f240a88c2799f1aacc55d ""
+  "figures/deviatoric_response.png" 1744224216 29292 7191292aa9346393c1b058e161abcf01 ""
   "figures/elastic_solution.png" 1743939183 23168 16b2acbae2b8d702bb0ad1480bd541eb ""
-  "figures/fitted.png" 1743937388 24742 0753ac0c6f4677c7ba1e04fdf066ed8a ""
-  "figures/stress.png" 1743941976 36674 c8fa2f2ec454e8ec83d78a6b5219fc0e ""
-  "main.aux" 1743942089 2357 5692c2589e76e3a3ffb88265f9c3dafa "pdflatex"
-  "main.out" 1743942089 669 a61140db5f225026a8710cb64c91b88c "pdflatex"
-  "main.tex" 1743942086 11040 eb709ff95fd0d1adbafe83c35ed3629d ""
+  "figures/fitted.png" 1744222204 33399 e17f4e100311c87c3cba06af4842688d ""
+  "figures/stress.png" 1744224268 37790 d125ced95f07889011eccead185b51b5 ""
+  "main.aux" 1744224281 2357 5692c2589e76e3a3ffb88265f9c3dafa "pdflatex"
+  "main.out" 1744224281 669 a61140db5f225026a8710cb64c91b88c "pdflatex"
+  "main.tex" 1744224169 10611 f7135b4cbf878bc49005e9dacd9b773f ""
   (generated)
   "main.aux"
   "main.log"

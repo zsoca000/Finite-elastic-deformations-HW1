@@ -88,50 +88,51 @@ The Prony parameters are used to describe the viscous behavior of materials. We 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=1]{figures/data.png}
+    \includegraphics[scale=0.875]{figures/data.png}
     \caption{Virtual DMA experiment data}
     \label{fig:experiment}
 \end{figure}
 
-If relaxation modulus is expressed with an $N$th order Prony-series, the storage modulus $E'$ and the loss modulus $E''$ can be expressed as a function of the frequency $\omega$ as
+We know that the storage modulus approaches the instantaneous modulus as the frequency increases, therefore the instantaneous modulus can be read from the figure as
 
 \begin{equation}
-E'(\omega) = 
-E_{\infty} + \sum_{i=1}^N \frac{\tau_i^2 \omega^2}{1+\tau_i^2 \omega^2}E_i,
+    \lim_{\omega\rightarrow\infty}E'(\omega) = E_0 \approx 45\;\text{MPa}.
+\end{equation}
+
+If relaxation modulus is expressed with an $N$th order Prony-series, the relative storage modulus $E'/E_0$ and the relative loss modulus $E''/E_0$ can be expressed as a function of the frequency $\omega$ as
+
+\begin{equation}
+\frac{E'(\omega)}{E_0} = 
+1 - \sum_{i=1}^N \frac{1}{1+\tau_i^2 \omega^2}e_i,
 \end{equation}
 
 \begin{equation}
-E''(\omega) = 
-\sum_{i=1}^N \frac{\tau_i \omega}{1+\tau_i^2 \omega^2}E_i,
+\frac{E''(\omega)}{E_0} = 
+\sum_{i=1}^N \frac{\tau_i \omega}{1+\tau_i^2 \omega^2}e_i,
 \end{equation}
 
-where the $E_{\infty},\{E_i\}_{i=1}^N$ and $\{\tau_i\}_{i=1}^N$ are the unknown Prony parameters. We will fit these functions on the measurement data, by optimizing the following objective function:
+where the $\{e_i\}_{i=1}^N$ and $\{\tau_i\}_{i=1}^N$ are the unknown Prony parameters. We will fit these functions on the measurement data, by optimizing the following objective function:
 
 \begin{equation}
-    Q\left(E_{\infty},\{E_i\}_{i=1}^N,\{\tau_i\}_{i=1}^N\right) = 
+    Q\left(\{E_i\}_{i=1}^N,\{\tau_i\}_{i=1}^N\right) = 
 \frac{1}{n}\sum_{j=1}^n \left[\left(1-\frac{E'(\omega_j)}{E'_j}\right)^2 + \left(1-\frac{E''(\omega_j)}{E''_j}\right)^2\right].
 \end{equation}
+
 
 I used the \texttt{scipy.optimize.minimize} method for this purpose:  
 
 \lstset{style=python}
 \begin{lstlisting}
-# order of the Prony series
-N = 9 
-
-# Initialize Prony parameters
-E_inf = E_storage_true[0]
-E = [E_inf/2] * N
-tau = [1] * N
-
-# Concatenate
-initial_guess = [E_inf] + E + tau
-
-# Define the bounds
-bounds = [(0, None)] * len(initial_guess)
-
-# Optimize
-result = minimize(Q, initial_guess, bounds=bounds)
+def fit_prony(N):
+    # Initial values
+    e = [E_storage_norm_true[0]/2] * N
+    tau = [100] * N
+    initial_guess = e + tau
+    # Conditions
+    bounds = [(0, None)] * len(initial_guess)
+    # Optimization
+    result = minimize(Q, initial_guess, bounds=bounds)
+    return result.x[0:N], result.x[N:], result.fun
 \end{lstlisting}
 
 \newpage
@@ -145,7 +146,7 @@ We can repeat the optimization for different orders of the Prony series. On Figu
     \label{fig:prony_order}
 \end{figure}
 
-We can observe that the 16th and the 9th order Prony series gives the best fit. The 16th order is a bit better, but it is not worth to use such a high order, so we will use the 9th order one. The fitted 9th order Prony parameters are summarized in  Table \ref{tab:prony_parameters}.
+We can observe that the 4th and the 9th order Prony series gives the best fit. The 9th order is a bit better, but it is not worth to use such a high order, so we will use the 9th order one. The fitted 9th order Prony parameters are summarized in  Table \ref{tab:prony_parameters}.
 
 \begin{table}[H]
     \centering
@@ -153,42 +154,27 @@ We can observe that the 16th and the 9th order Prony series gives the best fit. 
     \label{tab:prony_parameters}
     \begin{tabular}{|c|c|c|}
         \hline
-        \textbf{i} & \textbf{Value of $E_i$} & \textbf{Value of $\tau_i$} \\ \hline
-        $\infty$       & 8.9998                 & --                         \\ \hline
-        $1$              & 0.9049                 & 49.7626                    \\ \hline
-        $2$              & 0.9049                 & 49.7627                    \\ \hline
-        $3$              & 0.9066                 & 49.7630                    \\ \hline
-        $4$              & 0.9065                 & 49.7630                    \\ \hline
-        $5$              & 0.9053                 & 49.7666                    \\ \hline
-        $6$              & 9.0034                 & 0.9977                     \\ \hline
-        $7$              & 17.9962                & 0.1000                     \\ \hline
-        $8$              & 4.4825                 & 9.9175                     \\ \hline
-        $9$              & 4.5023                 & 1.0000                     \\ \hline
+        \textbf{i} & \textbf{Value of $e_i$} & \textbf{Value of $\tau_i$} \\ \hline
+        $1$              & 0.1000             & 50.0052                    \\ \hline
+        $2$              & 0.2000              &  1.0001                   \\ \hline
+        $3$              & 0.1000              & 10.0020                    \\ \hline
+        $4$              & 0.4000              & 0.1000                    \\ \hline
     \end{tabular}
 \end{table}
 
 We can also plot the fitted storage and loss moduli against the measured data. The fitted curves are shown in Figure \ref{fig:fittedmodel}.
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=1]{figures/fitted.png}
+    \includegraphics[scale=0.875]{figures/fitted.png}
     \caption{Fitted storage and loss moduli}
     \label{fig:fittedmodel}
 \end{figure}
 
+The value of the objectife function for this fit is $Q = 2.8\times 10^{-9}$, we accept this as a good fit.
+
 \newpage
 
-From the Prony parameters we can determine the $E_0$ instantaneous modulus as
-
-\begin{equation}
-    E_0 = E_{\infty} + \sum_{i=1}^N E_i,
-\end{equation}
-
-from which we can determine the relative moduli as
-\begin{equation}
-    \{e_i\}_{i=1}^N = \left\{\frac{E_i}{E_0}\right\}_{i=1}^N.
-\end{equation}
-
-We have an incpomressible material, so the deviatoric part of the stress determines the volumetric part, therefore will assume that the relaxation characteristic defined by the previously calculated Prony parameters, belongs to the deviatoric behaviour, which means
+We have an incpomressible material, which means the deviatoric part of the stress determines the volumetric part, therefore we will assume that the relaxation characteristic defined by the previously calculated Prony parameters, belongs to the deviatoric behaviour, which results
 
 \begin{equation}
     \{g_i\}_{i=1}^N = \{e_i\}_{i=1}^N.
@@ -297,12 +283,12 @@ SUM = np.zeros((3,len(t)))
 
 # calculate the convolution terms
 for i in range(len(tau)):
-    f = lambda t: F_inv(t)*s0(t)*F_inv(t).T
+    f = lambda t: F_inv(t)*s0(t)*F_inv(t)
     g = lambda t: np.e**(-t/tau[i])
     SUM += e[i]/tau[i] * conv(f,g,t)
 
 # deviatoric stress
-s = s0(t) - dev(F(t)*SUM*F(t).T)
+s = s0(t) - dev(F(t)*SUM*F(t))
 \end{lstlisting}
 
 \newpage

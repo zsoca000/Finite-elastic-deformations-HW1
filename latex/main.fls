@@ -452,13 +452,14 @@ INPUT .\figures\data.png
 INPUT .\figures\data.png
 INPUT .\figures\data.png
 INPUT .\figures\data.png
+INPUT C:\Users\rdsup\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
+INPUT C:\Users\rdsup\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0600.tfm
 INPUT C:\Users\rdsup\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
 INPUT C:\Users\rdsup\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\rdsup\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\rdsup\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\rdsup\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1095.tfm
 INPUT C:\Users\rdsup\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1095.tfm
-INPUT C:\Users\rdsup\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0600.tfm
 INPUT .\figures\best_prony.png
 INPUT .\figures\best_prony.png
 INPUT .\figures\best_prony.png
@@ -481,7 +482,6 @@ INPUT .\figures\elastic_solution.png
 INPUT .\figures\elastic_solution.png
 INPUT .\figures\elastic_solution.png
 INPUT .\figures\elastic_solution.png
-INPUT C:\Users\rdsup\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
 INPUT .\figures\deviatoric_response.png
 INPUT .\figures\deviatoric_response.png
 INPUT .\figures\deviatoric_response.png
