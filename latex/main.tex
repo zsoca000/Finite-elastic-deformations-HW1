@@ -83,7 +83,7 @@
 
 \section{Determination of the Prony parameters}
 
-The Prony parameters are used to describe the viscous behavior of materials. We can determine them by fitting the viscoplastic model's solution to the DMA experiment data. The measured quantities is the storage modulus $E'$ and the loss modulus $E''$, as shown in the Figure \ref{fig:experiment}.
+The Prony parameters are used to describe the viscous behavior of materials. We can determine them by fitting the viscoelastic model's solution to the DMA experiment data. The measured quantities are the storage modulus $E'$ and the loss modulus $E''$, as shown in the Figure \ref{fig:experiment}.
 
 
 \begin{figure}[h]
@@ -99,7 +99,7 @@ We know that the storage modulus approaches the instantaneous modulus as the fre
     \lim_{\omega\rightarrow\infty}E'(\omega) = E_0 \approx 45\;\text{MPa}.
 \end{equation}
 
-If relaxation modulus is expressed with an $N$th order Prony-series, the relative storage modulus $E'/E_0$ and the relative loss modulus $E''/E_0$ can be expressed as a function of the frequency $\omega$ as
+If relaxation characteristic is described with an $N$th order Prony-series, the relative storage modulus $E'/E_0$ and the relative loss modulus $E''/E_0$ can be expressed as a function of the frequency $\omega$ as
 
 \begin{equation}
 \frac{E'(\omega)}{E_0} = 
@@ -114,7 +114,7 @@ If relaxation modulus is expressed with an $N$th order Prony-series, the relativ
 where the $\{e_i\}_{i=1}^N$ and $\{\tau_i\}_{i=1}^N$ are the unknown Prony parameters. We will fit these functions on the measurement data, by optimizing the following objective function:
 
 \begin{equation}
-    Q\left(\{E_i\}_{i=1}^N,\{\tau_i\}_{i=1}^N\right) = 
+    Q\left(\{e_i\}_{i=1}^N,\{\tau_i\}_{i=1}^N\right) = 
 \frac{1}{n}\sum_{j=1}^n \left[\left(1-\frac{E'(\omega_j)}{E'_j}\right)^2 + \left(1-\frac{E''(\omega_j)}{E''_j}\right)^2\right].
 \end{equation}
 
@@ -146,7 +146,7 @@ We can repeat the optimization for different orders of the Prony series. On Figu
     \label{fig:prony_order}
 \end{figure}
 
-We can observe that the 4th and the 9th order Prony series gives the best fit. The 9th order is a bit better, but it is not worth to use such a high order, so we will use the 9th order one. The fitted 9th order Prony parameters are summarized in  Table \ref{tab:prony_parameters}.
+We can observe that the 4th and the 8th order Prony series gives the best fit. The 9th order is a bit better, but it is not worth to use such a high order, so we will use the 4th order one. The fitted 4th order Prony parameters are summarized in  Table \ref{tab:prony_parameters}.
 
 \begin{table}[H]
     \centering
@@ -162,7 +162,7 @@ We can observe that the 4th and the 9th order Prony series gives the best fit. T
     \end{tabular}
 \end{table}
 
-We can also plot the fitted storage and loss moduli against the measured data. The fitted curves are shown in Figure \ref{fig:fittedmodel}.
+We can also plot the fitted storage and loss moduli against the measured data. The fitted curve is shown in Figure \ref{fig:fittedmodel}.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.875]{figures/fitted.png}
@@ -188,7 +188,7 @@ The purely elastic behavior of the material (under 'infinitely slow' loading) is
     W(\lambda_1, \lambda_2, \lambda_3) = \frac{2\mu_1}{\alpha_1^2} \left( \lambda_1^{\alpha_1} + \lambda_2^{\alpha_1} + \lambda_3^{\alpha_1} - 3 \right).
 \end{equation}
 
-We know that uniaxial loading is prescirbed. The solution of this model for the uniaxial loading was shown at continuum mechanics lectures. The Cauchy stress solution can be expressed as
+We know that uniaxial loading is prescirbed. The solution of the uncompressible model for the uniaxial loading was shown at continuum mechanics lectures. The Cauchy stress solution can be expressed as
 
 \begin{equation}
 \sigma_0 = P_0\cdot\lambda = \frac{2\mu_k}{\alpha_k}(\lambda^{\alpha_k} - \lambda^{-\frac{\alpha_k}{2}}).
@@ -197,7 +197,7 @@ We know that uniaxial loading is prescirbed. The solution of this model for the 
 The engineering strain time evolution is given as
 
 \begin{equation}
-\varepsilon(t) = 15t\cdot e^{-2t}-0.09t,
+\varepsilon(t) = 15t\cdot e^{-2t}-0.09t.
 \end{equation}
 
 Therefore, the uniaxial stretch can be expressed as
@@ -230,7 +230,7 @@ For uniaxial loading, the deviatoric part of the instantaneous Cauchy stress ten
 \end{equation}
 
 
-We know from the lecture that, the deviatoric part of the stress can be expressed as
+We know from the lecture that, the deviatoric part of the viscoelastic stress can be expressed as
 
 \begin{equation}
 \boldsymbol{s}(t) = \boldsymbol{s}_0(t) - 
