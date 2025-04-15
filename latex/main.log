@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.2.24)  10 APR 2025 21:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.2.24)  15 APR 2025 20:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -969,11 +969,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has
                                                   \__shipout_drop_firstpage_...
 l.175 \newpage
                <./figures/best_prony.png> <./figures/fitted.png>]
-<figures/elastic_solution.png, id=119, 337.7418pt x 221.628pt>
+<figures/elastic_solution.png, id=119, 334.851pt x 211.992pt>
 File: figures/elastic_solution.png Graphic file (type png)
 <use figures/elastic_solution.png>
-Package pdftex.def Info: figures/elastic_solution.png  used on input line 211.
-(pdftex.def)             Requested size: 270.1938pt x 177.30263pt.
+Package pdftex.def Info: figures/elastic_solution.png  used on input line 218.
+(pdftex.def)             Requested size: 267.88115pt x 169.59381pt.
 
 
 
@@ -987,8 +987,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.216 \newpage
+l.223 \newpage
                <./figures/elastic_solution.png>]
+<figures/deviatoric_response.png, id=135, 277.5168pt x 211.0284pt>
+File: figures/deviatoric_response.png Graphic file (type png)
+<use figures/deviatoric_response.png>
+Package pdftex.def Info: figures/deviatoric_response.png  used on input line 304.
+(pdftex.def)             Requested size: 277.51611pt x 211.02788pt.
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -998,16 +1004,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
 
 [6]
-<figures/deviatoric_response.png, id=163, 272.217pt x 211.0284pt>
-File: figures/deviatoric_response.png Graphic file (type png)
-<use figures/deviatoric_response.png>
-Package pdftex.def Info: figures/deviatoric_response.png  used on input line 299.
-(pdftex.def)             Requested size: 272.21631pt x 211.02788pt.
-<figures/stress.png, id=165, 563.706pt x 214.8828pt>
+<figures/stress.png, id=168, 561.297pt x 217.7736pt>
 File: figures/stress.png Graphic file (type png)
 <use figures/stress.png>
-Package pdftex.def Info: figures/stress.png  used on input line 328.
-(pdftex.def)             Requested size: 450.96541pt x 171.90646pt.
+Package pdftex.def Info: figures/stress.png  used on input line 333.
+(pdftex.def)             Requested size: 449.03821pt x 174.2191pt.
 
 
 
@@ -1021,13 +1022,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.335 \newpage
-              
+l.345 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.335 \newpage
-               <./figures/deviatoric_response.png> <./figures/stress.png>]
+l.345 \end{document}
+                     <./figures/deviatoric_response.png> <./figures/stress.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1045,17 +1046,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: A61140DB5F225026A8710CB64C91B88C;669.
  ) 
 Here is how much of TeX's memory you used:
- 37276 strings out of 473523
- 833202 string characters out of 5714630
- 1545821 words of memory out of 5000000
+ 37278 strings out of 473523
+ 833224 string characters out of 5714630
+ 1546821 words of memory out of 5000000
  59818 multiletter control sequences out of 15000+600000
  579162 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,17n,101p,786b,1285s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm2074.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (8 pages, 906899 bytes).
+Output written on main.pdf (8 pages, 907070 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
+ 278 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
  82 words of extra memory for PDF output out of 10000 (max. 10000000)
 

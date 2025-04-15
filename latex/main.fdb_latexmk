@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1744311920.00079 "c:/Users/rdsup/Desktop/mecha2/latex/main.tex" "main.pdf" "main" 1744311926.32663 0
+["pdflatex"] 1744742256.85713 "c:/Users/rdsup/Desktop/mecha2/latex/main.tex" "main.pdf" "main" 1744742262.93285 0
   "C:/Users/rdsup/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1743800173 319829 7a5a640d46b5de74b1e9e3f84fcbfba8 ""
   "C:/Users/rdsup/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1740413720 12015783 f0c2336a7da70ce41d7e5b252576240c ""
   "C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1001775420 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -264,16 +264,16 @@
   "C:/Users/rdsup/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/rdsup/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "HF.pdf" 1743798065 501930 facb7924ee82e70c8125bc651666c79b ""
-  "c:/Users/rdsup/Desktop/mecha2/latex/main.tex" 1744311917 10922 bc2acb05477ad5842c3a2579db241ccb ""
+  "c:/Users/rdsup/Desktop/mecha2/latex/main.tex" 1744742255 11505 ea133fc3c1d3a425bfd74e56642e8eee ""
   "figures/best_prony.png" 1744223913 10357 58b3b418830bf8d53aa1403643068208 ""
   "figures/data.png" 1744221872 16398 782d7c0e585f240a88c2799f1aacc55d ""
-  "figures/deviatoric_response.png" 1744224216 29292 7191292aa9346393c1b058e161abcf01 ""
-  "figures/elastic_solution.png" 1743939183 23168 16b2acbae2b8d702bb0ad1480bd541eb ""
+  "figures/deviatoric_response.png" 1744742198 30526 4dece490ac41a19b35e57f4a6cc266f6 ""
+  "figures/elastic_solution.png" 1744742167 22741 d40949ce35065cc6269e04cb22b6db76 ""
   "figures/fitted.png" 1744222204 33399 e17f4e100311c87c3cba06af4842688d ""
-  "figures/stress.png" 1744224268 37790 d125ced95f07889011eccead185b51b5 ""
-  "main.aux" 1744311925 2357 851f345acc1ee1bbfbdbf3e6fde38eb0 "pdflatex"
-  "main.out" 1744311925 669 a61140db5f225026a8710cb64c91b88c "pdflatex"
-  "main.tex" 1744311917 10922 bc2acb05477ad5842c3a2579db241ccb ""
+  "figures/stress.png" 1744742225 36142 2149fb3ab71b8404173dfaa1049b3bd3 ""
+  "main.aux" 1744742262 2357 851f345acc1ee1bbfbdbf3e6fde38eb0 "pdflatex"
+  "main.out" 1744742262 669 a61140db5f225026a8710cb64c91b88c "pdflatex"
+  "main.tex" 1744742255 11505 ea133fc3c1d3a425bfd74e56642e8eee ""
   (generated)
   "main.aux"
   "main.log"
