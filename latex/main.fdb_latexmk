@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1744742256.85713 "c:/Users/rdsup/Desktop/mecha2/latex/main.tex" "main.pdf" "main" 1744742262.93285 0
+["pdflatex"] 1744988005.02941 "c:/Users/rdsup/Desktop/mecha2/latex/main.tex" "main.pdf" "main" 1744988007.36763 0
   "C:/Users/rdsup/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1743800173 319829 7a5a640d46b5de74b1e9e3f84fcbfba8 ""
   "C:/Users/rdsup/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1740413720 12015783 f0c2336a7da70ce41d7e5b252576240c ""
   "C:/Users/rdsup/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1001775420 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -264,16 +264,16 @@
   "C:/Users/rdsup/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/rdsup/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "HF.pdf" 1743798065 501930 facb7924ee82e70c8125bc651666c79b ""
-  "c:/Users/rdsup/Desktop/mecha2/latex/main.tex" 1744742255 11505 ea133fc3c1d3a425bfd74e56642e8eee ""
+  "c:/Users/rdsup/Desktop/mecha2/latex/main.tex" 1744988004 12462 e69e598f87b51fa78abd963b4dc79cc9 ""
   "figures/best_prony.png" 1744223913 10357 58b3b418830bf8d53aa1403643068208 ""
   "figures/data.png" 1744221872 16398 782d7c0e585f240a88c2799f1aacc55d ""
   "figures/deviatoric_response.png" 1744742198 30526 4dece490ac41a19b35e57f4a6cc266f6 ""
   "figures/elastic_solution.png" 1744742167 22741 d40949ce35065cc6269e04cb22b6db76 ""
   "figures/fitted.png" 1744222204 33399 e17f4e100311c87c3cba06af4842688d ""
   "figures/stress.png" 1744742225 36142 2149fb3ab71b8404173dfaa1049b3bd3 ""
-  "main.aux" 1744742262 2357 851f345acc1ee1bbfbdbf3e6fde38eb0 "pdflatex"
-  "main.out" 1744742262 669 a61140db5f225026a8710cb64c91b88c "pdflatex"
-  "main.tex" 1744742255 11505 ea133fc3c1d3a425bfd74e56642e8eee ""
+  "main.aux" 1744988006 2357 0e6bc9d73c694b0cbb7c8e9fd6ef86ba "pdflatex"
+  "main.out" 1744988006 669 a61140db5f225026a8710cb64c91b88c "pdflatex"
+  "main.tex" 1744988004 12462 e69e598f87b51fa78abd963b4dc79cc9 ""
   (generated)
   "main.aux"
   "main.log"

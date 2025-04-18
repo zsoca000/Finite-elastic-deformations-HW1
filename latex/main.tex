@@ -298,6 +298,32 @@ for i in range(len(tau)):
 s = s0(t) - dev(F(t)*SUM*F(t))
 \end{lstlisting}
 
+
+\newpage
+
+Unfortunately, if we check the final values of the stress, we can observe that, with this method we need a very high temporal resolution to achieve the accuracy required by the task, since the $dt=10^{-5}$ [s] is not enough. 
+
+At the same time, the general convolution with  $dt=10^{-6}$ [s] has too high computational cost. Therefore, alternative numerical methods or optimized algorithms are required to balance accuracy and efficiency. I will just replace the the convolution function, with an FFT accelerated specral convoltion method, known as \texttt{scipy.signal.fftconvolve}. The modified function is:
+
+\lstset{style=python}
+\begin{lstlisting}
+from scipy.signal import fftconvolve
+
+def conv(f, g, t):
+    dt = t[1] - t[0]
+    T = len(t)
+
+    f_vals = f(t)
+    g_vals = g(t)
+
+    res = np.array([
+        fftconvolve(f_vals[j, :], g_vals, mode='full')[:T] * dt
+        for j in range(3)
+    ])
+    return res
+\end{lstlisting}
+
+
 We can plot the deviatoric stress response as a function of time. The result is shown in Figure \ref{fig:viscoelastic_stress}.
 \begin{figure}[H]
     \centering
@@ -320,6 +346,8 @@ Therefore, we can express the volumetric part of the stress as
     \boldsymbol{p}(t) = - s_{22}(t)\boldsymbol{I}.
 \end{equation}
 
+\newpage
+
 The viscoelastic stress response can be expressed as
 
 \begin{equation}
@@ -335,7 +363,7 @@ We can be plot the result as the function of the time and the function of the st
     \label{fig:stress}
 \end{figure}
 
-Furthermore we can print the final value of the stress response: $\boldsymbol{\sigma}(t=10) = -44.2233$ [Mpa].
+Furthermore we can print the final value of the stress response: $\boldsymbol{\sigma}(t=10) = -46.10578$ [Mpa].
 
 
 \section*{References}
